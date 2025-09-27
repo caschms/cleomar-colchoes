@@ -179,4 +179,4 @@ const Products = () => {
   );
 };
 
-export const Products;
+export { Products };
