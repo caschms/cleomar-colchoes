@@ -177,4 +177,4 @@ const Footer = () => {
   );
 };
 
-export const Footer;
+export { Footer };
