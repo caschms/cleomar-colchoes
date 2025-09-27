@@ -1,21 +1,11 @@
-/* Cleomar Colchões - Custom Styles */
-
-/* Remove default center alignment to maintain natural reading flow */
-.App {
-  /* DO NOT add text-align: center here */
-}
-
-/* Custom fonts - using system fonts with fallbacks */
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
 }
 
-/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
-/* Brand colors as CSS variables */
 :root {
   --brand-blue: #2563eb;
   --brand-yellow: #fcd34d;
@@ -24,13 +14,13 @@ html {
   --brand-light-blue: #dbeafe;
 }
 
-/* Custom animations and transitions */
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
@@ -38,7 +28,6 @@ html {
   }
 }
 
-/* Enhanced button hover effects */
 .btn-hover-scale {
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
@@ -48,7 +37,6 @@ html {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Custom gradient backgrounds (light only, following guidelines) */
 .gradient-hero {
   background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
 }
@@ -57,14 +45,12 @@ html {
   background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
 }
 
-/* Glass morphism effect for cards */
 .glass-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Micro-interactions for better UX */
 .interactive-element {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -73,13 +59,11 @@ html {
   transform: translateY(-2px);
 }
 
-/* Custom focus states for accessibility */
 .focus-ring:focus {
   outline: 2px solid var(--brand-blue);
   outline-offset: 2px;
 }
 
-/* Enhanced shadow utilities */
 .shadow-brand {
   box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.15);
 }
@@ -88,7 +72,6 @@ html {
   box-shadow: 0 10px 25px -3px rgba(37, 99, 235, 0.1), 0 4px 6px -2px rgba(37, 99, 235, 0.05);
 }
 
-/* Typography enhancements */
 .text-brand-gradient {
   background: linear-gradient(135deg, var(--brand-blue) 0%, var(--brand-yellow) 100%);
   -webkit-background-clip: text;
@@ -96,7 +79,6 @@ html {
   background-clip: text;
 }
 
-/* Loading states */
 .loading-shimmer {
   background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
   background-size: 200% 100%;
@@ -112,7 +94,6 @@ html {
   }
 }
 
-/* Responsive design helpers */
 @media (max-width: 640px) {
   .mobile-padding {
     padding-left: 1rem;
@@ -120,7 +101,6 @@ html {
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -138,55 +118,44 @@ html {
   background: var(--brand-dark-blue);
 }
 
-/* Performance optimizations */
 .gpu-accelerated {
   transform: translateZ(0);
   will-change: transform;
 }
 
-/* Print styles */
 @media print {
   .no-print {
     display: none !important;
   }
-  
+
   body {
     color: black !important;
     background: white !important;
   }
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
   .interactive-element {
     border: 2px solid currentColor;
   }
 }
 
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   .animate-float,
   .loading-shimmer {
     animation: none;
   }
-  
+
   .interactive-element {
     transition: none;
   }
 }
 
-/* Dark mode support (if needed in future) */
-@media (prefers-color-scheme: dark) {
-  /* Dark mode styles would go here if implemented */
-}
-
-/* Focus visible for better keyboard navigation */
 .focus-visible:focus-visible {
   outline: 2px solid var(--brand-blue);
   outline-offset: 2px;
 }
 
-/* Custom utilities for brand consistency */
 .brand-border {
   border-color: var(--brand-blue);
 }
@@ -197,25 +166,4 @@ html {
 
 .brand-text {
   color: var(--brand-blue);
-}
-
-.brand-yellow-bg {
-  background-color: var(--brand-yellow);
-}
-
-.brand-yellow-text {
-  color: #d97706; /* Darker yellow for better contrast */
-}
-
-/* Spacing consistency */
-.section-padding {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (max-width: 768px) {
-  .section-padding {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
