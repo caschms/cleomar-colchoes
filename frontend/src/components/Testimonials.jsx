@@ -108,4 +108,4 @@ const Testimonials = () => {
   );
 };
 
-export const Testimonials;
+export { Testimonials };
