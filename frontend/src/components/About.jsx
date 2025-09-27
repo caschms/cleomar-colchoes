@@ -110,4 +110,4 @@ const About = () => {
   );
 };
 
-export const About;
+export { About };
