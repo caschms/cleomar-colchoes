@@ -55,4 +55,4 @@ const Header = () => {
   );
 };
 
-export const Header;
+export { Header };
