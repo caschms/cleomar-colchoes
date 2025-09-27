@@ -90,4 +90,4 @@ const Hero = () => {
   );
 };
 
-export const Hero;
+export { Hero };
